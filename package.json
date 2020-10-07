@@ -1,0 +1,33 @@
+{
+  "name": "distrocord",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node dist/index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nerdthatnoonelikes/distrocord.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nerdthatnoonelikes/distrocord/issues"
+  },
+  "homepage": "https://github.com/nerdthatnoonelikes/distrocord#readme",
+  "devDependencies": {
+    "@types/discord-rpc": "^3.0.4",
+    "@types/node": "^14.11.5",
+    "@typescript-eslint/eslint-plugin": "^4.4.0",
+    "@typescript-eslint/parser": "^4.4.0",
+    "eslint": "^7.10.0",
+    "typescript": "^4.0.3"
+  },
+  "dependencies": {
+    "@ayana/logger": "^2.1.1",
+    "discord-rpc": "^3.1.4",
+    "dotenv": "^8.2.0"
+  }
+}
