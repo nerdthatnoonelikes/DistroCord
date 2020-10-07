@@ -14,8 +14,8 @@
     "distrocord": "./dist/index.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "NerdThatNoOneLikes",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/nerdthatnoonelikes/distrocord/issues"
   },

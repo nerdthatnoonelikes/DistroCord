@@ -5,6 +5,7 @@ import { Client } from "discord-rpc";
 import Logger from "@ayana/logger";
 import fs from "fs";
 import dotenv from "dotenv";
+import os from "os";
 
 const log = Logger.get("distrocord");
 
@@ -19,7 +20,7 @@ async function getOsInfo() {
 
   client.setActivity({
     details: distro,
-    startTimestamp: new Date(),
+    startTimestamp: os.uptime(),
     largeImageKey: imagekey.toLowerCase(),
     smallImageKey: desktopSession?.toLowerCase(),
     smallImageText: desktopSession,
@@ -35,6 +36,7 @@ client.on("ready", () => {
 client.on("connected", () => {
   log.info("rich presence connected");
 });
+
   
 
 client.login({clientId: clientID});
