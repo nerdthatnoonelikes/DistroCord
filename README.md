@@ -22,4 +22,4 @@ If you have those **cd** into this repository and run **npm i**, after thats ove
 *Note: Not all distros are supported currently*
 
 ## Gallery
-![Example](./screenshots/example.png)
+![Example](./screenshots/screenshot.png)
