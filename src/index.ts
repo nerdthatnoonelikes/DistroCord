@@ -1,3 +1,5 @@
+#!/usr/bin/env node 
+
 const clientID = "747441906258018415";
 import { Client } from "discord-rpc";
 import Logger from "@ayana/logger";
@@ -13,11 +15,15 @@ async function getOsInfo() {
   const data = dotenv.parse(fileStr);
   const imagekey = data.ID;
   const distro = data.NAME;
+  const desktopSession = process.env.DESKTOP_SESSION;
 
   client.setActivity({
     details: distro,
     startTimestamp: new Date(),
-    largeImageKey: imagekey.toLowerCase()
+    largeImageKey: imagekey.toLowerCase(),
+    smallImageKey: desktopSession?.toLowerCase(),
+    smallImageText: desktopSession,
+    largeImageText: distro
   });
 }
 

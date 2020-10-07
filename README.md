@@ -4,9 +4,14 @@ DistroCord is a tool to show your linux distro info as a discord rich presence
 
 ## Installation
 
-Until I publish this on npm the only way to use this is to git clone it.
-
-## Usage
+```bash
+npm i -g distrocord
+```
+this will install distrocord globally to run it you can do `distrocord` you can also just run 
+```bash
+npx distrocord
+```
+## Building From Source
 Once you clone this repo make sure you have 
 
 1. NodeJS installed
