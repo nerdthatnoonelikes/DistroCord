@@ -23,3 +23,4 @@ If you have those **cd** into this repository and run **npm i**, after thats ove
 
 ## Gallery
 ![Example](./screenshots/screenshot.png)
+![Fedora Example](./screenshots/unknown.png)
