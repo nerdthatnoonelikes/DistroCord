@@ -15,3 +15,6 @@ Once you clone this repo make sure you have
 If you have those **cd** into this repository and run **npm i**, after thats over run **npm start** and your rich presence should work
 
 *Note: Not all distros are supported currently*
+
+## Gallery
+![Example](./screenshots/example.png)

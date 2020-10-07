@@ -11,12 +11,13 @@ const client: Client = new Client({transport: "ipc"});
 async function getOsInfo() {
   const fileStr = await fs.promises.readFile("/etc/os-release");
   const data = dotenv.parse(fileStr);
-  const distro = data.ID;
+  const imagekey = data.ID;
+  const distro = data.NAME;
 
   client.setActivity({
     details: distro,
     startTimestamp: new Date(),
-    largeImageKey: distro.toLowerCase()
+    largeImageKey: imagekey.toLowerCase()
   });
 }
 
